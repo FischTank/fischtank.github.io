@@ -1,0 +1,29 @@
+.portable-message {
+    display: block;
+    margin: 5px;
+}
+.pm-layout-message {
+    border: 1px solid black;
+    width: 400px;
+    padding: 5px;
+    max-width: 90%;
+    margin: auto;
+}
+.pm-layout-hatnote {
+    width: 90%;
+    text-align: center;
+}
+.pm-layout-thin {
+    border: 1px solid black;
+    width: 100px;
+    padding: 2px;
+    float: left;
+}
+.pm-image { padding: 2px; height: 100px; width: auto; }
+.pm-image-primary { float: left; }
+.pm-image-secondary { float: right; }
+.pm-title {
+    font-weight: bolder;
+    font-size: larger;
+}
+.pm-content {}
