@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Portable Messages / Notices</title>
+  <meta name="author" content="Isaac Fischer">
+
+  <link rel="stylesheet" href="Themes.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <code>
+  <notice theme="editing" theme-source="mbox-type" layout="message(|hatnote|thin)">
+    <image source="" role="primary(|secondary)">
+        <default />
+        <alt />
+    </image>
+    <title source="issue">
+      <!-- This construct is entirely to replicate the "sect" function of Amboxes -->
+      <default> has serious editing issues.</default>
+      <prefix source="sect">
+        <default>This article</default>
+      </prefix>
+      <format>{{{sect}}}{{{issue}}}</format>
+      <!-- END psuedo-"sect" -->
+    </title>
+    <content source="guideline">
+        <default>Please fix them.</default>
+        <format />
+        <label />
+    </content>
+    <image source="icon" role="secondary"><default>File:Editing.svg</default><alt>Editing</alt></image>
+  </notice>
+  </code>
+  <code>
+  <aside class="portable-message pm-layout-message pm-theme-editing">
+    <img src="" class="pm-item pm-image pm-image-primary" alt="" />
+    <h3 class="pm-item pm-title" data-sect="This article">This article has serious editing issues.</h3>
+    <div class="pm-item pm-content">Please fix them.</div>
+    <img src="File:Editing.svg" class="pm-item pm-image pm-image-secondary" alt="Editing" />
+  </aside>
+  </code>
+  <aside class="portable-message pm-layout-message pm-theme-editing">
+    <img src="" class="pm-item pm-image pm-image-primary" alt="" />
+    <h3 class="pm-item pm-title" data-sect="This article">This article has serious editing issues.</h3>
+    <div class="pm-item pm-content">Please fix them.</div>
+    <img src="File:Editing.svg" class="pm-item pm-image pm-image-secondary" alt="Editing" />
+  </aside>
+</body>
+</html>
